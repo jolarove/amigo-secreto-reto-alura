@@ -1,6 +1,8 @@
 //Creamos el array para almacenar los nombres
 
 let nombresAmigos = [];
+let lista = document.getElementById('listaAmigos');
+
 
 function limpiarCampo(elemento) {
     document.querySelector(elemento).value = '';
@@ -22,6 +24,16 @@ function agregarAmigo() {
     }
     console.log(nombresAmigos);
     limpiarCampo('#amigo');
+    agregarLista();
     return;
 }
 
+function agregarLista() {
+    lista.innerHTML = "";
+    for (let amigo of nombresAmigos){
+        let nuevoAmigo = document.createElement('li');
+        nuevoAmigo.textContent = amigo;
+        lista.appendChild(nuevoAmigo);
+    }
+    return;
+}
