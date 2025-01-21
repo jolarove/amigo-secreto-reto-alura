@@ -25,8 +25,10 @@ El proyecto está disponible en: https://jolarove.github.io/amigo-secreto-reto-a
 <h2>Tecnologías utilizadas</h2>
 
 <b>HTML</b>
+
 <b>CSS</b>
-<b>Javascript<b>
+
+<b>Javascript</b>
 
 <h2>Autores</h2>
 
