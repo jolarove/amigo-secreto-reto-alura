@@ -37,3 +37,15 @@ function agregarLista() {
     }
     return;
 }
+
+function sortearAmigo(){
+    if (nombresAmigos.length < 2){
+        alert('Antes de sortear, debes ingresar al menos dos nombres');
+    } else {
+        let indiceAleatorio = Math.floor(Math.random() * nombresAmigos.length);
+        let nombreAleatorio = nombresAmigos[indiceAleatorio];
+        let resultado = document.getElementById('resultado');
+        resultado.innerHTML = nombreAleatorio;
+    }
+    return;
+}
