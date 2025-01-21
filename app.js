@@ -46,6 +46,8 @@ function sortearAmigo(){
         let nombreAleatorio = nombresAmigos[indiceAleatorio];
         let resultado = document.getElementById('resultado');
         resultado.innerHTML = nombreAleatorio;
+        nombresAmigos = [];
+        lista.innerHTML = '';
     }
     return;
 }
